@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 4.5 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- jQuery (required for smooth scrolling) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <style>
+    body {
+      position: relative;
+    }
+    p {
+      font-size: 18px;
+    }
+    #section1 {
+      padding-top: 70px;
+      height: 500px;
+      color: white;
+      background-color: orange;
+    }
+    #section2 {
+      padding-top: 70px;
+      height: 500px;
+      color: green;
+      background-color: white;
+    }
+    .navbar {
+      background-color: #222;
+      border: none;
+    }
+    .navbar-brand {
+      font-size: 22px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+ 
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                       
+      </button>
+      <a class="navbar-brand" href="#">Codingal</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>   
+ 
+<div id="section1" class="container-fluid">
+  <h1>Section 1</h1>
+  <h3>Codingal</h3>
+  <h5>Codingal is on a mission to inspire school kids to fall in love with coding.</h5>
+  <p>Coding develops creativity, logical thinking, and problem-solving skills. Coding is an essential skill for the future, with over 60% of STEM jobs requiring coding knowledge. Kids who start coding early become future leaders, creators, and entrepreneurs.</p>
+</div>
+
+<div id="section2" class="container-fluid">
+  <h1>Section 2</h1>
+  <h3>Codingal</h3>
+  <h5>Vivek Prakash and Satyam Baranwal are the founders of Codingal.</h5>
+  <p>Scroll this section.</p>
+</div>
+
+</body>
+</html>

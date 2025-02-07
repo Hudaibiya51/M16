@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scrollspy Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <style>
+    body {
+      position: relative; 
+      padding-top: 70px; /* Fix navbar overlapping content */
+    }
+    #section1, #section2, #section3, #section41, #section42 {
+      padding-top: 50px;
+      height: 400px; /* Increased height for better scrolling effect */
+      color: white;
+    }
+    #section1 { background-color: #1E86E4; }
+    #section2 { background-color: #845eb7; }
+    #section3 { background-color: #ff9800; }
+    #section41 { background-color: #00bcd4; }
+    #section42 { background-color: #009688; }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target="#myNavbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top" id="myNavbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Portfolio</a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#section1">Home</a></li>
+        <li><a href="#section2">About Us</a></li>
+        <li><a href="#section3">Services</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact Us <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#section41">Login</a></li>
+            <li><a href="#section42">Registration</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Content Sections -->
+<div id="section1" class="container-fluid">
+  <h1>Home</h1>
+  <p>Welcome to Codingal</p>
+</div>
+
+<div id="section2" class="container-fluid">
+  <h1>About Us</h1>
+  <p>Welcome to Codingal</p>
+</div>
+
+<div id="section3" class="container-fluid">
+  <h1>Services</h1>
+  <p>Welcome to Codingal</p>
+</div>
+
+<div id="section41" class="container-fluid">
+  <h1>Login</h1>
+  <p>Welcome to the Login Page</p>
+</div>
+
+<div id="section42" class="container-fluid">
+  <h1>Registration</h1>
+  <p>Welcome to the Registration Page</p>
+</div>
+
+</body>
+</html>

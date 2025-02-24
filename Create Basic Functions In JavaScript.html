@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the World of JavaScript</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        #result {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Welcome to the World of JavaScript</h2>
+    <p id="result"></p>
+
+    <script>
+        function sumOfTwoNumbers() {
+            let x = 5, y = 6;
+            return x + y;
+        }
+
+        let sum = sumOfTwoNumbers();
+        let message = `The sum of x and y is ${sum}`;
+
+        console.log(message);
+        document.getElementById("result").textContent = message;
+    </script>
+</body>
+
+</html>

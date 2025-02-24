@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Changing Color of HTML Text Using JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <p>JavaScript can change the color of HTML text.</p>
+    <p>Watch the color change!</p>
+    
+    <button onclick="changeColor()">Click here!</button>
+
+    <p id="change">Good Morning!</p>
+
+    <script>
+      function changeColor() {
+        document.getElementById("change").style.color = "aqua";
+      }
+    </script>
+  </body>
+</html>

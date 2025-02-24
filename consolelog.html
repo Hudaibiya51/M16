@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console Page</title>
+    <style>
+      body {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      #intro {
+        max-width: 600px;
+        margin: 0 auto;
+        font-size: 18px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Welcome to the World of JavaScript</h2>
+    <p id="intro"></p>
+
+    <script>
+      window.onload = function () {
+        let text = "Welcome to web development.";
+        document.getElementById("intro").textContent = text;
+        console.log(text);
+      };
+    </script>
+  </body>
+</html>

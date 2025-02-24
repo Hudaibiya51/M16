@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Intro to JavaScript</title>
+    <style>
+      body {
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Intro to JavaScript</h2>
+    <p id="intro"></p>
+
+    <script>
+      window.onload = function () {
+        let text = "Hello, I am Ansh Gandhi. I live in India.";
+        document.getElementById("intro").innerText = text;
+        console.log(text);
+      };
+    </script>
+  </body>
+</html>

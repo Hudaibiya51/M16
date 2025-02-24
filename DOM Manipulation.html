@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutorial</title>
+  <style>
+    .alert {
+        color: aqua;
+        background: green;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="heading">Welcome</h1>
+    <p>Hello</p>
+  </header>
+  <p>Let's create a div</p>
+
+  <script>
+     // Step 1: Creating a div and adding it to the document
+      let div = document.createElement('div');
+      div.id = "paragraph";
+      div.className = "alert";
+      div.innerHTML = "<p>🎉 Congrats! You have created a div. </p>";
+      document.body.appendChild(div);
+    
+     // Step 2: Modifying an existing HTML element
+     let heading = document.getElementById("heading");
+     heading.textContent = "😀 Welcome";
+
+    // Step 3: Modifying another HTML element
+    document.querySelector('header p').innerHTML = "<strong>Good Job!</strong>";
+  </script>
+</body>
+</html>

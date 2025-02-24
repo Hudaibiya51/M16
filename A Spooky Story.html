@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Creepy Story</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            transition: background 0.5s, color 0.5s;
+        }
+        body.dark {
+            color: white;
+            background: black;
+        }
+        button {  
+            display: block;
+            margin: 10px;
+            padding: 8px 15px;
+            cursor: pointer;
+            font-size: 16px;
+            border: none;
+            background: darkred;
+            color: white;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: crimson;
+            transform: scale(1.05);
+        }
+        .textEntry {
+            margin-top: 12px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>The Basement</h1>
+    <p id="story">I wanted to find my friend, and he was hiding in the basement.</p>
+
+    <button onclick="goDark()">Get In The Mood</button>
+    
+    <div class="textEntry">
+        Type your name here, if you dare: 
+        <input type="text" id="name">
+    </div>
+
+    <button onclick="typeAndScream()">Please, Please Don't Click Me</button>
+    <button onclick="finishTheStory()">Tell Me What Happened!</button>
+
+    <audio id="audio" src="https://www.fesliyanstudios.com/play-mp3/387" type="audio/mpeg"></audio>
+
+    <script>
+        function typeAndScream() {
+            let personName = document.getElementById("name").value || "stranger";
+            alert("I told you not to do that, " + personName + "!");
+            
+            // Play scream sound effect
+            let sound = document.getElementById("audio");
+            sound.play();
+        }
+
+        function goDark() {
+            document.body.classList.toggle("dark");
+        }
+
+        function finishTheStory() {
+            document.getElementById("story").innerHTML = 
+                "So I carefully searched the damp dungeon... 'There you are!'";
+        }
+    </script>
+</body>
+</html>
